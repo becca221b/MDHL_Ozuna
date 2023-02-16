@@ -32,7 +32,6 @@ header h1{
     font-style: oblique;
     display: flex;
     width: 700px;
-    justify-content: baseline;
     margin-top: 20px;
     padding-left: 10px;
     color: yellow;
@@ -79,14 +78,32 @@ aside{
     display: flex;
     flex-basis: 20%;
     display: flex;
-    justify-content: center;
-    
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 aside img{
     height: 150px;
     width: 150px;
     margin-top: 20px;
+}
+aside a{
+    font-size: 1rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 150px;
+    margin-bottom: 10px;  
+}
+aside a[href="#"]{
+    background-color: green;
 }
 article{
     font-size: 1.5rem;
@@ -125,7 +142,6 @@ article div{
     margin-left: 50px;
 }
 .table-container{
-    margin: 150 px auto;
     width: 800px;
 }
 table{
