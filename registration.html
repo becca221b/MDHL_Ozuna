@@ -33,30 +33,101 @@
             </aside>
 
             <article>
-                <form action="">
-                    <div>
-                        <label for="name">Player's First Name</label>
-                        <input type="text" name="name" id="name">
-                        <label for="">Last Name</label>
-                        <input type="text" id="lastnamegit ">
+                <h3>Registration form</h3>
+                <form action="./show_data.html">
+                    <fieldset class="personal-data">
+                        <legend>Personal data</legend>
+                        <div>
+                            <label for="name">Player's First Name</label>
+                            <input type="text" name="name" id="name">
+                            <label>Last Name</label>
+                            <input type="text" id="lastname" name="lastname">
+                        </div>
+                        <div>
+                            <label>Street Address</label>
+                            <input type="text" name="address" id="address">
+                        </div>
+                        <div>
+                            <label for="">City</label>
+                            <input type="text" name="city" id="city">
+                            <label for="">Zip Code</label>
+                            <input type="number" name="dni" id="dni" max="1000000000">
+                        </div>
+                        <div>    
+                            <label for="">Birth date</label>
+                            <input type="date" name="birthdate" id="birthdate">
+                            <label>Gender:
+                                <input type="radio" value="F" name="gender"></label>Female
+                                <input type="radio" value="M" name="gender"></label>Male
+                            </label>
+                        </div>
+                        <div>
+                            <label>Grade:
+                                <input type="radio" name="grade" id="grade" value="0">Pre-School
+                                <input type="radio" name="grade" id="grade" value="1">1st
+                                <input type="radio" name="grade" id="grade" value="2">2nd
+                                <input type="radio" name="grade" id="grade" value="3">3rd
+                                <input type="radio" name="grade" id="grade" value="4">4th
+                                <input type="radio" name="grade" id="grade" value="5">5th
+                                
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="elementary">
+                        <legend>Which elementary school do you live near?</legend>
+                        <label>Closest School:<br>
+                            <input type="radio" name="grade" id="grade" value="A"> AJ Katzenmaier <br>
+                            <input type="radio" name="grade" id="grade" value="M">Marjorie P Hart<br>
+                            <input type="radio" name="grade" id="grade" value="G">Greenbay <br>
+                            <input type="radio" name="grade" id="grade" value="N">North Elementary<br>
+                            <input type="radio" name="grade" id="grade" value="H">Howard A Yeager <br>
+                            <input type="radio" name="grade" id="grade" value="S">South Elementary<br>
+                        </label>
+                    </fieldset>
+                    <fieldset class="position">
+                        <legend>What position(s) do you normally play</legend>
+                        <input type="checkbox" name="grade" id="grade" value="F">Forward
+                        <input type="checkbox" name="grade" id="grade" value="M">Mildfield
+                        <input type="checkbox" name="grade" id="grade" value="D">Defense
+                        <input type="checkbox" name="grade" id="grade" value="G">Goalkeeper
+                    </fieldset>
+                    <fieldset class="size">
+                        <legend>Uniform size</legend>
+                        <label>
+                            <input name="talle" type="radio" value="0" id="talle">Small<br>
+                        </label>
+                        <label>
+                            <input name="talle" type="radio" value="1" id="talle">Youth Small<br>
+                        </label>
+                        <label>
+                            <input name="talle" checked type="radio" value="2" id="talle">Medium<br>
+                        </label>
+                        <label>
+                            <input name="talle" type="radio" value="3" id="talle">Youth Medium<br>
+                        </label>
+                        <label>
+                            <input name="talle" type="radio" value="4" id="talle">Large<br>
+                        </label>
+                        <label>
+                            <input name="talle" type="radio" value="5" id="talle">Youth-Large<br>
+                        </label>
+                        <label>
+                            <input name="talle" type="radio" value="6" id="talle">Extra-Large<br>
+                        </label>
+                    </fieldset>
+                    <fieldset class="permission">
+                        <legend>Permission to Play</legend>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga reprehenderit excepturi reiciendis a itaque, dolores, cupiditate voluptatem saepe perferendis quas voluptates, suscipit illum tempore obcaecati tempora quia sunt dolorem laboriosam?</p>
+                        <div>
+                            <label>Parent/Gardian Signature</label>
+                            <input type="text" name="signature" id="signature">
+                            <label>Date</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+                    </fieldset>
+                    <div class="boton">
+                        <button>Enviar</button>
                     </div>
-                    <div>
-                        <label for="address">Street Address</label>
-                        <input type="text" name="address" id="">
-                    </div>
-                    <div>
-                        <label for="">City</label>
-                        <input type="text" name="" id="">
-                        <label for="">Zip Code</label>
-                        <input type="" name="" id="">
-                    </div>
-                    <div>    
-                        <label for="">Birth date</label>
-                        <input type="text" name="" id="">
-                    </div>
-                    
-                    
-                    
                 </form>
             </article>
         </div>

@@ -165,3 +165,46 @@ tr:hover th{
     background-color: black;
     color: yellow;
 }
+.elementary{
+    display: flex;
+}
+.elementary label, .size label{
+    height: 270px;
+    padding: 20px;
+}
+#grade, #talle, .personal-data div{
+    margin: 10px; 
+}
+.position{
+    height: 100px;
+}
+.position legend, .size legend{
+    margin-bottom: 20px;
+}
+.size{
+    height: 300px;
+}
+.permission p{
+    padding: 20px;
+}
+.permission div{
+    margin-bottom: 20px;
+}
+form{
+   
+}
+button{
+    width: 120px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
+}
+.boton{
+    display: flex;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
