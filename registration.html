@@ -35,7 +35,7 @@
             <article>
                 <h3>Registration form</h3>
                 <form action="./show_data.html">
-                    <fieldset class="personal-data">
+                    <div class="personal-data">
                         <legend>Personal data</legend>
                         <div>
                             <label for="name">Player's First Name</label>
@@ -69,53 +69,43 @@
                                 <input type="radio" name="grade" id="grade" value="3">3rd
                                 <input type="radio" name="grade" id="grade" value="4">4th
                                 <input type="radio" name="grade" id="grade" value="5">5th
-                                
                             </label>
                         </div>
-                    </fieldset>
-                    <fieldset class="elementary">
+                    </div>
+                    <div class="elementary">
                         <legend>Which elementary school do you live near?</legend>
                         <label>Closest School:<br>
-                            <input type="radio" name="grade" id="grade" value="A"> AJ Katzenmaier <br>
-                            <input type="radio" name="grade" id="grade" value="M">Marjorie P Hart<br>
-                            <input type="radio" name="grade" id="grade" value="G">Greenbay <br>
-                            <input type="radio" name="grade" id="grade" value="N">North Elementary<br>
-                            <input type="radio" name="grade" id="grade" value="H">Howard A Yeager <br>
-                            <input type="radio" name="grade" id="grade" value="S">South Elementary<br>
+                            <input type="radio" name="school" id="school" value="A"> AJ Katzenmaier <br>
+                            <input type="radio" name="school" id="school" value="M">Marjorie P Hart<br>
+                            <input type="radio" name="school" id="school" value="G">Greenbay <br>
+                            <input type="radio" name="school" id="school" value="N">North Elementary<br>
+                            <input type="radio" name="school" id="school" value="H">Howard A Yeager <br>
+                            <input type="radio" name="school" id="school" value="S">South Elementary<br>
                         </label>
-                    </fieldset>
-                    <fieldset class="position">
+
+                    </div>
+                    <div class="position">
                         <legend>What position(s) do you normally play</legend>
-                        <input type="checkbox" name="grade" id="grade" value="F">Forward
-                        <input type="checkbox" name="grade" id="grade" value="M">Mildfield
-                        <input type="checkbox" name="grade" id="grade" value="D">Defense
-                        <input type="checkbox" name="grade" id="grade" value="G">Goalkeeper
-                    </fieldset>
-                    <fieldset class="size">
+                        <input type="checkbox" name="position" id="position" value="F">Forward
+                        <input type="checkbox" name="position" id="position" value="M">Mildfield
+                        <input type="checkbox" name="position" id="position" value="D">Defense
+                        <input type="checkbox" name="position" id="position" value="G">Goalkeeper
+                    </div>
+                    <div class="size">
                         <legend>Uniform size</legend>
-                        <label>
-                            <input name="talle" type="radio" value="0" id="talle">Small<br>
-                        </label>
-                        <label>
-                            <input name="talle" type="radio" value="1" id="talle">Youth Small<br>
-                        </label>
-                        <label>
-                            <input name="talle" checked type="radio" value="2" id="talle">Medium<br>
-                        </label>
-                        <label>
-                            <input name="talle" type="radio" value="3" id="talle">Youth Medium<br>
-                        </label>
-                        <label>
-                            <input name="talle" type="radio" value="4" id="talle">Large<br>
-                        </label>
-                        <label>
-                            <input name="talle" type="radio" value="5" id="talle">Youth-Large<br>
-                        </label>
-                        <label>
-                            <input name="talle" type="radio" value="6" id="talle">Extra-Large<br>
-                        </label>
-                    </fieldset>
-                    <fieldset class="permission">
+                        <select name="size" id="size">
+                            <option disabled selected>Choose an option</option>
+                            <option value="0">Small</option>
+                            <option value="1">Youth-small</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Youth-Medium</option>
+                            <option value="4">Large</option>
+                            <option value="5">Youth-Large</option>
+                            <option value="6"> Extra-Large</option>
+                        </select>
+                    </div>
+                    
+                    <div class="permission">
                         <legend>Permission to Play</legend>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga reprehenderit excepturi reiciendis a itaque, dolores, cupiditate voluptatem saepe perferendis quas voluptates, suscipit illum tempore obcaecati tempora quia sunt dolorem laboriosam?</p>
                         <div>
@@ -124,7 +114,7 @@
                             <label>Date</label>
                             <input type="date" name="date" id="date">
                         </div>
-                    </fieldset>
+                    </div>
                     <div class="boton">
                         <button>Enviar</button>
                     </div>

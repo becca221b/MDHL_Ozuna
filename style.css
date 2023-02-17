@@ -167,23 +167,22 @@ tr:hover th{
 }
 .elementary{
     display: flex;
+    flex-direction: column;
 }
 .elementary label, .size label{
-    height: 270px;
+    height: 240px;
     padding: 20px;
 }
 #grade, #talle, .personal-data div{
     margin: 10px; 
 }
 .position{
-    height: 100px;
+    height: 70px;
 }
 .position legend, .size legend{
     margin-bottom: 20px;
 }
-.size{
-    height: 300px;
-}
+
 .permission p{
     padding: 20px;
 }
@@ -191,20 +190,33 @@ tr:hover th{
     margin-bottom: 20px;
 }
 form{
-   
+   background-color: gray;
+   border-radius: 10px;
+   font-size: 0.8rem;
+   font-weight: bold;
+   padding: 10px;
+   width: 600px;
 }
 button{
-    width: 120px;
+    width: 150px;
     height: 40px;
-    background-color: blue;
+    background-color: green;
     border-radius: 5px;
     color: white;
     font-size: large;
+    border-color: yellow;
 }
 .boton{
     display: flex;
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+form legend{
+color: yellow;
+font-size: larger;
+}
+iframe{
+    width: 200px;
+    height: 100px;
 }
