@@ -119,8 +119,8 @@ article div{
     
 }
 .fechas{
-    background-color:yellowgreen;
-    border-radius:15px;
+    background-color:#399E5A;
+    border-radius: 15px;
     padding: 10px;
 }
 
@@ -145,13 +145,14 @@ article div{
     width: 800px;
 }
 table{
-    background-color: green;
+    background-color: #26AF4F;
     text-align: center;
     width: 100%;
     border-collapse: collapse;
+    color: white;
 }
 th, td{
-    border: solid 1px black;
+    border: solid 1px yellow;
     padding: 10px;
 }
 thead{
@@ -159,23 +160,23 @@ thead{
     color: yellow;
 }
 tr:nth-child(even){
-    background-color: yellow;
+    background-color: #1B5E2E;
 }
 tr:hover th{
     background-color: black;
     color: yellow;
 }
+.personal-data{
+    font-size: 0.8rem;
+}
 .elementary{
     display: flex;
     flex-direction: column;
 }
-.elementary label, .size label{
-    height: 240px;
+.elementary label{
     padding: 20px;
 }
-#grade, #talle, .personal-data div{
-    margin: 10px; 
-}
+
 .position{
     height: 70px;
 }
@@ -190,9 +191,9 @@ tr:hover th{
     margin-bottom: 20px;
 }
 form{
-   background-color: gray;
+   background-color: #399E5A;
    border-radius: 10px;
-   font-size: 0.8rem;
+   font-size: 1rem;
    font-weight: bold;
    padding: 10px;
    width: 600px;
